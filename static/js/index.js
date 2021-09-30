@@ -70,6 +70,21 @@ function hist(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	  
+	  
+	   if(message.payloadString[1]=="1"){
+	   document.getElementById("sensor1").innerHTML=message.payloadString;
+	 
+	  }
+	  
+	  if(message.payloadString[1]=="2"){
+	   document.getElementById("sensor2").innerHTML=message.payloadString;
+           
+	  }
+	   if(message.payloadString[1]=="e"){
+	  
+           document.getElementById("historial").innerHTML=message.payloadString;
+	  }
+	  /*
 	  if (message.payloadString=="S1Activado"){
 	  document.getElementById("sensor1").innerHTML=message.payloadString;
 	  }
@@ -98,7 +113,7 @@ function hist(){
 	  
 	  if (message.payloadString=="S2_APAGADO"){
 	  document.getElementById("historial").innerHTML=message.payloadString;
-	  }
+	  }*/
 	
   }
   
