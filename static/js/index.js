@@ -70,23 +70,6 @@ function hist(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	  
-	  if (message.payloadString=="S1_ENCENDIDO"){
-	  document.getElementById("historial").innerHTML=message.payloadString;
-	  }
-	    if (message.payloadString=="S1_APAGADO"){
-	  document.getElementById("historial").innerHTML=message.payloadString;
-	  }
-	  
-	  if (message.payloadString=="S2_ENCENDIDO"){
-	  document.getElementById("historial").innerHTML=message.payloadString;
-	  }
-	  
-	  if (message.payloadString=="S2_APAGADO"){
-	  document.getElementById("historial").innerHTML=message.payloadString;
-	  }
-	  
-	  
-
 	  if (message.payloadString=="S1Activado"){
 	  document.getElementById("sensor1").innerHTML=message.payloadString;
 	  }
@@ -101,5 +84,21 @@ function hist(){
 	  if (message.payloadString=="S2Activado"){
 	  document.getElementById("sensor2").innerHTML=message.payloadString;
 	  }
+	  
+	  if (message.payloadString=="S1_ENCENDIDO"){
+	  document.getElementById("historial").innerHTML=message.payloadString;
+	  }
+	    if (message.payloadString=="S1_APAGADO"){
+	  document.getElementById("historial").innerHTML=message.payloadString;
+	  }
+	  
+	  if (message.payloadString=="S2_ENCENDIDO"){
+	  document.getElementById("historial").innerHTML=message.payloadString;
+	  }
+	  
+	  if (message.payloadString=="S2_APAGADO"){
+	  document.getElementById("historial").innerHTML=message.payloadString;
+	  }
+	
   }
   
