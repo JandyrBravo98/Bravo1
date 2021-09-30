@@ -76,11 +76,11 @@ function hist(){
 	 
 	  }
 	  
-	  if(message.payloadString[0]=="S"){
+	  if(message.payloadString[0]=="T"){
 	   document.getElementById("sensor2").innerHTML=message.payloadString;
            
 	  }
-	   if(message.payloadString[0]=="z"){
+	   if(message.payloadString[0]=="S"){
            document.getElementById("historial").innerHTML=message.payloadString;
 	  }
 	  /*
