@@ -80,8 +80,7 @@ function hist(){
 	   document.getElementById("sensor2").innerHTML=message.payloadString;
            
 	  }
-	   if(message.payloadString[0]=="x"){
-	  
+	   if(message.payloadString[0]=="z"){
            document.getElementById("historial").innerHTML=message.payloadString;
 	  }
 	  /*
