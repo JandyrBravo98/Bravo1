@@ -1,6 +1,6 @@
 //https://www.eclipse.org/paho/clients/js/
 
-function LED1_On() {
+function sensores() {
 	//alert("led on");
 	console.log("H1");
 	//document.getElementById("sensor").innerHTML="led on";
@@ -9,7 +9,7 @@ function LED1_On() {
     	client.send(message);
   
 }
-function LED1_Off(){	
+function hist(){	
 	//alert("led off");
 	console.log("H2");
 	message = new Paho.MQTT.Message("sensor2");
@@ -69,6 +69,7 @@ function LED1_Off(){
   // called when a message arrives
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
+	  
 	  if (message.payloadString=="S1_ENCENDIDO"){
 	  document.getElementById("historial").innerHTML=message.payloadString;
 	  }
