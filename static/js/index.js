@@ -69,18 +69,18 @@ function LED1_Off(){
   // called when a message arrives
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
-	  if (message.payloadString=="S1_Encendido"){
+	  if (message.payloadString=="S1_ENCENDIDO"){
 	  document.getElementById("historial").innerHTML=message.payloadString;
 	  }
-	    if (message.payloadString=="S1_Apagado"){
-	  document.getElementById("historial").innerHTML=message.payloadString;
-	  }
-	  
-	  if (message.payloadString=="S2_Encendido"){
+	    if (message.payloadString=="S1_APAGADO"){
 	  document.getElementById("historial").innerHTML=message.payloadString;
 	  }
 	  
-	  if (message.payloadString=="S2_Apagado"){
+	  if (message.payloadString=="S2_ENCENDIDO"){
+	  document.getElementById("historial").innerHTML=message.payloadString;
+	  }
+	  
+	  if (message.payloadString=="S2_APAGADO"){
 	  document.getElementById("historial").innerHTML=message.payloadString;
 	  }
 	  
