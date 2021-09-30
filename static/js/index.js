@@ -77,11 +77,11 @@ function LED1_Off(){
 	  }
 	  
 	  if (message.payloadString=="S2_ENCENDIDO"){
-	  document.getElementById("sensor2").innerHTML=message.payloadString;
+	  document.getElementById("historial").innerHTML=message.payloadString;
 	  }
 	  
 	  if (message.payloadString=="S2_APAGADO"){
-	  document.getElementById("sensor2").innerHTML=message.payloadString;
+	  document.getElementById("historial").innerHTML=message.payloadString;
 	  }
 	  
 	  
@@ -94,11 +94,11 @@ function LED1_Off(){
 	  }
 	  
 	  if (message.payloadString=="S2Activado"){
-	  document.getElementById("historial").innerHTML=message.payloadString;
+	  document.getElementById("sensor2").innerHTML=message.payloadString;
 	  }
 	  
 	  if (message.payloadString=="S2Activado"){
-	  document.getElementById("historial").innerHTML=message.payloadString;
+	  document.getElementById("sensor2").innerHTML=message.payloadString;
 	  }
   }
   
