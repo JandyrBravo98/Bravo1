@@ -70,17 +70,34 @@ function LED1_Off(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
 	  if (message.payloadString=="S1_Encendido"){
-	  document.getElementById("sensor1").innerHTML=message.payloadString;
+	  document.getElementById("historial").innerHTML=message.payloadString;
 	  }
 	    if (message.payloadString=="S1_Apagado"){
-	  document.getElementById("sensor1").innerHTML=message.payloadString;
+	  document.getElementById("historial").innerHTML=message.payloadString;
 	  }
 	  
 	  if (message.payloadString=="S2_Encendido"){
-	  document.getElementById("sensor2").innerHTML=message.payloadString;
+	  document.getElementById("historial").innerHTML=message.payloadString;
 	  }
 	  
 	  if (message.payloadString=="S2_Apagado"){
+	  document.getElementById("historial").innerHTML=message.payloadString;
+	  }
+	  
+	  
+
+	  if (message.payloadString=="S1Activado"){
+	  document.getElementById("sensor1").innerHTML=message.payloadString;
+	  }
+	    if (message.payloadString=="S1Apagado"){
+	  document.getElementById("sensor1").innerHTML=message.payloadString;
+	  }
+	  
+	  if (message.payloadString=="S2Activado"){
+	  document.getElementById("sensor2").innerHTML=message.payloadString;
+	  }
+	  
+	  if (message.payloadString=="S2Activado"){
 	  document.getElementById("sensor2").innerHTML=message.payloadString;
 	  }
   }
