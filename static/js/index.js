@@ -71,12 +71,12 @@ function hist(){
     console.log("onMessageArrived:"+message.payloadString);
 	  
 	  
-	   if(message.payloadString[1]=="1"){
+	   if(message.payloadString[0]=="P"){
 	   document.getElementById("sensor1").innerHTML=message.payloadString;
 	 
 	  }
 	  
-	  if(message.payloadString[1]=="2"){
+	  if(message.payloadString[0]=="S"){
 	   document.getElementById("sensor2").innerHTML=message.payloadString;
            
 	  }
