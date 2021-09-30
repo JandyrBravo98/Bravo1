@@ -78,11 +78,11 @@ function hist(){
 	  }
 	  
 	  if (message.payloadString=="S2Activado"){
-	  document.getElementById("sensor2").innerHTML=message.payloadString;
+	  document.getElementById("sensor1").innerHTML=message.payloadString;
 	  }
 	  
 	  if (message.payloadString=="S2Activado"){
-	  document.getElementById("sensor2").innerHTML=message.payloadString;
+	  document.getElementById("sensor1").innerHTML=message.payloadString;
 	  }
 	  
 	  if (message.payloadString=="S1_ENCENDIDO"){
