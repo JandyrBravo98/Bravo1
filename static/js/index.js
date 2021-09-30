@@ -94,11 +94,11 @@ function LED1_Off(){
 	  }
 	  
 	  if (message.payloadString=="S2Activado"){
-	  document.getElementById("historial").innerHTML=message.payloadString;
+	  document.getElementById("sensor2").innerHTML=message.payloadString;
 	  }
 	  
 	  if (message.payloadString=="S2Activado"){
-	  document.getElementById("historial").innerHTML=message.payloadString;
+	  document.getElementById("sensor2").innerHTML=message.payloadString;
 	  }
   }
   
